@@ -1,6 +1,7 @@
 {
   "name": "research",
   "version": "0.1.0",
+  "homepage": "https://michaelsandner.github.io/research/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
