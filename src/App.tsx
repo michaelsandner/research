@@ -15,10 +15,10 @@ function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/secret">
+          <Route path={process.env.PUBLIC_URL + "/secret"}>
             <Secret/>
           </Route>
-          <Route path="/">
+          <Route path={process.env.PUBLIC_URL + "/"}>
             <Archive />
           </Route>
         </Switch>
