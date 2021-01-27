@@ -1,17 +1,29 @@
-import logo from './rage.png';
 import './App.css';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+import Archive from './archive';
+import Secret from './secret';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          RAAAGEEE!
-        </p>
-
-      </header>
-    </div>
+    <Router>
+      <div>
+        {/* A <Switch> looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
+        <Switch>
+          <Route path="/secret">
+            <Secret/>
+          </Route>
+          <Route path="/">
+            <Archive />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
