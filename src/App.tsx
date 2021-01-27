@@ -1,7 +1,7 @@
 import './App.css';
 import React from "react";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
@@ -15,10 +15,10 @@ function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path={process.env.PUBLIC_URL + "/secret"}>
+          <Route path="/secret">
             <Secret/>
           </Route>
-          <Route path={process.env.PUBLIC_URL + "/"}>
+          <Route path="/">
             <Archive />
           </Route>
         </Switch>
