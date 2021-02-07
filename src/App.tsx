@@ -5,7 +5,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import Archive from './archive';
+import Progress from './progress';
 import Secret from './secret';
 
 function App() {
@@ -16,10 +16,10 @@ function App() {
             renders the first one that matches the current URL. */}
         <Switch>
           <Route path="/secret">
-            <Secret/>
+            <Secret />
           </Route>
           <Route path="/">
-            <Archive />
+            <Progress />
           </Route>
         </Switch>
       </div>
