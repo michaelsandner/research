@@ -4,7 +4,7 @@ import Solution from "./solution";
 import room from "./room.pdf";
 
 function Level1() {
-    const [page, setPage] = useState(1);
+    const [page] = useState(1);
     return (
         <div>
             <h1>Level1</h1>
