@@ -8,10 +8,10 @@ function Level1() {
     return (
         <div>
             <h1>Level1</h1>
-            <Solution />
             <Document file={room}>
                 <Page pageNumber={page} />
             </Document>
+            <Solution />
         </div >
     )
 }

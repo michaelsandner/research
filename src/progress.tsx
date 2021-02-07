@@ -62,6 +62,7 @@ function Progress() {
 
             <TabPanel value={level} index={2}>
                 <div>
+                    <h1>Level 3</h1>
                     <Button onClick={() => dispatch(levelSlice.actions.reset())}>Reset</Button>
                 </div>
             </TabPanel>
