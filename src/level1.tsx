@@ -1,13 +1,17 @@
-import React from "react";
-import { Document } from 'react-pdf/dist/esm/entry.webpack';
+import React, { useState } from "react";
+import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
 import Solution from "./solution";
+import room from "./room.pdf";
 
 function Level1() {
+    const [page, setPage] = useState(1);
     return (
         <div>
-            <label>Level1</label>
+            <h1>Level1</h1>
             <Solution />
-            <Document file="room.pdf"></Document>
+            <Document file={room}>
+                <Page pageNumber={page} />
+            </Document>
         </div >
     )
 }
